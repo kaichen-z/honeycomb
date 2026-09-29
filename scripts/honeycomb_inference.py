@@ -27,6 +27,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--num-frames", type=int, default=33)
     parser.add_argument("--start-frame", type=int, default=0)
     parser.add_argument("--infer-steps", type=int, default=40)
+    parser.add_argument("--guidance-scale", type=float, default=3.5)
+    parser.add_argument(
+        "--negative-prompt",
+        default="bright colors, overexposed, static, blurred details, subtitles, style, artwork, painting, picture, still, overall gray, worst quality, low quality, JPEG compression residue, ugly, incomplete, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, malformed limbs, fused fingers, still picture, cluttered background, three legs, many people in the background, walking backwards",
+    )
     parser.add_argument(
         "--torch-dtype", choices=("bf16", "fp16", "fp32"), default="bf16"
     )
@@ -57,6 +62,8 @@ def validate_args(args: argparse.Namespace) -> None:
     for name in ("start_frame", "max_reference_frames", "preceding_pixel_frames"):
         if getattr(args, name) < 0:
             raise ValueError(f"--{name.replace('_', '-')} must be non-negative.")
+    if args.guidance_scale < 1.0:
+        raise ValueError("--guidance-scale must be at least 1.")
     if (args.height is None) != (args.width is None):
         raise ValueError("--height and --width must be provided together.")
 
@@ -100,6 +107,9 @@ def load_pipeline_from_args(args: argparse.Namespace):
         start_frame=args.start_frame,
         infer_steps=args.infer_steps,
         timestep_shift=args.timestep_shift,
+        guidance_scale=args.guidance_scale,
+        no_cfg=args.guidance_scale == 1.0,
+        negative_prompt=args.negative_prompt,
         fps=args.fps,
         max_reference_frames=args.max_reference_frames,
         preceding_pixel_frames=args.preceding_pixel_frames,
