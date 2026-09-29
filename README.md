@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>Honeycomb: Constant-Size Scene Memory Representation<br/>for Video World Models</h1>
+  <h1>Honeycomb: Constant-Size Scene Memory<br/>Representation for Video World Models</h1>
 
   <p>
     Jack Wei Lun Shi<sup>2,*</sup> &nbsp;
@@ -35,7 +35,7 @@ To prepare data and train the model, follow the numbered sections: prepare clips
 | --- | --- |
 | `honeycomb/` | Memory bounds, latent handling, and readout utilities |
 | `shared_writer/` | Shared writer architecture, splatting, and training helpers |
-| `recurrent_writer/` | Recurrent memory updates and writer training |
+| `recurrent_writer/` | Recurrent memory updates and writer training (default) |
 | `replacement_writer/` | Replacement writer and rollout-pack preparation shared by both writers |
 | `adapter/` | Corpus building and the HexMemory rollout adapter |
 | `data_process/` | Clip preparation, geometry, captions, VAE encoding, and LMDB packing |
