@@ -3,15 +3,15 @@
   <h1>Honeycomb: Constant-Size Scene Memory<br/>Representation for Video World Models</h1>
 
   <p>
-    Jack Wei Lun Shi<sup>2,*</sup> &nbsp;
-    Kaichen Zhou<sup>1,3,*</sup><br/>
-    Haoyu Chen<sup>1</sup> &nbsp;
-    Yufeng Weng<sup>2</sup> &nbsp;
-    Keane Ong<sup>2,3</sup> &nbsp;
-    Ruojin Cai<sup>1</sup> &nbsp;
-    Hang Hua<sup>4</sup><br/>
-    Justin K.W. Yeoh<sup>2</sup> &nbsp;
-    Mengyu Wang<sup>1</sup>
+    <b>Jack Wei Lun Shi</b><sup>2,*</sup> &nbsp;
+    <b>Kaichen Zhou</b><sup>1,3,*</sup><br/>
+    <b>Haoyu Chen</b><sup>1</sup> &nbsp;
+    <b>Yufeng Weng</b><sup>2</sup> &nbsp;
+    <b>Keane Ong</b><sup>2,3</sup> &nbsp;
+    <b>Ruojin Cai</b><sup>1</sup> &nbsp;
+    <b>Hang Hua</b><sup>4</sup><br/>
+    <b>Justin K.W. Yeoh</b><sup>2</sup> &nbsp;
+    <b>Mengyu Wang</b><sup>1</sup>
   </p>
 
   <p>
