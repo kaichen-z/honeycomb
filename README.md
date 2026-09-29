@@ -23,6 +23,12 @@
 
   <p><sup>*</sup>Equal contribution.</p>
 
+  <p>
+    <a href="https://github.com/kaichen-z/honeycomb"><img src="https://img.shields.io/badge/Paper-arXiv-F4B8B0?labelColor=FDE6E2" width="98" alt="arXiv" /></a>
+    &nbsp;&nbsp;
+    <a href="https://jackswl.github.io/honeycomb/"><img src="https://img.shields.io/badge/Project-Page-F6D9A0?labelColor=FFF3DC" width="105" alt="Project Page" /></a>
+  </p>
+
 </div>
 
 We introduce Honeycomb, a video world model built on HexMemory, our proposed low-rank representation for storing scene features in a fixed-size memory with a total of six spatial and spatiotemporal planes.
