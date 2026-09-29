@@ -1,6 +1,29 @@
-# Honeycomb
+<div align="center">
 
-Training and inference code for the anonymous ICLR submission.
+  <h1>Honeycomb: Constant-Size Scene Memory Representation<br/>for Video World Models</h1>
+
+  <p>
+    Jack Wei Lun Shi<sup>2,*</sup> &nbsp;
+    Kaichen Zhou<sup>1,3,*</sup><br/>
+    Haoyu Chen<sup>1</sup> &nbsp;
+    Yufeng Weng<sup>2</sup> &nbsp;
+    Keane Ong<sup>2,3</sup> &nbsp;
+    Ruojin Cai<sup>1</sup> &nbsp;
+    Hang Hua<sup>4</sup><br/>
+    Justin K.W. Yeoh<sup>2</sup> &nbsp;
+    Mengyu Wang<sup>1</sup>
+  </p>
+
+  <p>
+    <sup>1</sup>Harvard University &nbsp;&nbsp;
+    <sup>2</sup>National University of Singapore<br/>
+    <sup>3</sup>MIT &nbsp;&nbsp;
+    <sup>4</sup>MIT-IBM Watson AI Lab
+  </p>
+
+  <p><sup>*</sup>Equal contribution.</p>
+
+</div>
 
 We introduce Honeycomb, a video world model built on HexMemory, our proposed low-rank representation for storing scene features in a fixed-size memory with a total of six spatial and spatiotemporal planes.
 
